@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="repository.freeg" name="[COLOR gold]Free-G Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<extension point="xbmc.addon.repository" name="Free-G Repository">
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.freeg/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.freeg/master/</datadir>
+    </dir>  
+    <dir>
+        <info compressed="false">https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml</info>
+        <checksum>https://github.com/mrgsi/repository.wnt2/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mrgsi/repository.wnt2/master/</datadir>
+    </dir>  
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jewbmx/repo/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jewbmx/repo/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jewbmx/repo/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>All FREE, No Premium Service Required</summary>
+    <description>A collection of Add-ons which uses free sources for those who can't afford or just refuse to use a premium service with Kodi. This is as good as it gets.</description>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+</extension>
+</addon>
+    
+<addon id="plugin.audio.tuneinradio" name="[COLOR aqua]TuneIn Radio K19[/COLOR]" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>	
+</addon>
+    
+<addon id="plugin.video.tubitv" name="TubiTV" version="5.0.3" provider-name="Lunatixz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.t1mlib" version="4.0.2"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="inputstream.adaptive" version="2.6.0"/>
+    <import addon="script.module.kodi-six" version="0.1.3.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="pseudotv_recommended.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=</forum>
+    <website>http://www.tubitv.com/</website>
+    <news>v.5.0.1[CR]PseudoTV Live support</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="en_GB">tubitv</summary>
+    <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
+    <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
+  </extension>
+</addon>
+    
+<addon id="plugin.video.internetarchive" name="Internet Archive [Video]" version="4.2.6" provider-name="MetalChris,gujal">
+  <requires>
+    <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="script.module.requests" />
+    <import addon="script.module.six" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.beautifulsoup4" version="4.2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch thousands of free videos and movies from the Internet Archive</summary>
+    <description lang="en">Internet Archive is a non-profit digital library.  Choose from thousands of digital movies uploaded by Archive users which range from classic full-length films, to daily alternative news broadcasts, to cartoons and concerts. *Matrix Version*</description>
+    <disclaimer lang="en">Support provided at forum.kodi.tv or via my github.  I will not provide support at TVaddons, or any other forum.  Please provide a full, unedited, debug log when requesting support.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <news>
+v4.2.6
+- Fixes for search pagination and quality selection.
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.powernationtv" name="PowerNation TV" version="2022.03.05" provider-name="MetalChris, zymbiosis">
+    <requires>
+    <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.2"/>
+    <import addon="script.module.html5lib" version="0.999.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0 or Later</license>
+        <summary lang="en">PowerNation TV is the source of how-to television for auto enthusiasts.</summary>
+        <description lang="en">PowerNation TV brings you in-depth how-to shows to cater to your automotive interests, featuring Xtreme Off-Road, Detroit Muscle, Truck Tech, Engine Power and more!  Currently this add-on provides access to the free episodes only.  *Matrix Version*</description>
+        <disclaimer lang="en">For support go to my github. No support without a full, unedited debug log.  No support at TVAddons or any other forum.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL(v2) or Later</license>
+        <forum></forum>
+        <website>http://www.powernationtv.com</website>
+        <email></email>
+        <source>https://github.com/MetalChris/repository.metalchris/tree/master/plugin.video.powernationtv</source>
+        <news>Version 2022.03.04 - Fixed missing dependency in addon.xml file.</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+    </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.quest" name="Quest" version="2022.11.21" provider-name="MetalChris">
+    <requires>
+        <!-- <import addon="xbmc.python" version="2.1.0"/> -->
+        <import addon="script.module.requests" version="2.9.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en">24/7 Quest programming</summary>
+        <description lang="en">Quest is a 24/7 broadcast television network that entertains and informs its viewers with exhilarating adventure programming about nature's greatest dangers, history's greatest mysteries and man's greatest achievements. *Matrix Version*</description>
+        <disclaimer lang="en">For support go to my github. No support without a full, unedited debug log.  No support at TVAddons or any other forum.</disclaimer>
+        <language></language>
+        <platform>all</platform>
+        <license>GPL(v2) or Later</license>
+        <forum></forum>
+        <website>https://www.questtv.com/</website>
+        <email></email>
+        <source></source>
+        <news>v.2022.09.13[CR]- Update for API changes</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+    
+<addon id="plugin.video.duffyou" name="Duff You" version="0.1.3" provider-name="La Taberna">
+    <requires>
+        <import addon="script.module.six" version="1.11.0" />
+        <import addon="script.module.simplecache" />
+        <import addon="script.module.inputstreamhelper" version="0.5.0" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
+        <provides>video</provides>
+    </extension>
+	<extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">YouTube without needing API keys</summary>
+        <description lang="es">Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
+        <description lang="en">Tired of dealing with YouTube/Google api keys and only able to see the videos on the platform up to 720p?[CR]Well, that's over! From our team we present a new YouTube addon, where NO API KEY is needed, no logging in, nor are there any kind of restrictions to watch the videos at the highest quality offered (720p, 1080p, 2K and 4K!)[CR]All this and much more more...</description>
+        <disclaimer lang="es">Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>    
+        <disclaimer lang="en">This add-on is offered as [COLOR red][B]free[/B][/COLOR][CR][COLOR red][B]software! It is not allowed[/B][/COLOR] to be distributed or pre-installed on any type of device including in other software and/or hardware package for which the end user must [COLOR red][B]pay or make a donation[/B][/COLOR], for its acquisition, for its use or for receiving assistance.[CR]It must be redistributed for free. If you believe that any of these rules is not being followed, please contact us.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.jpg</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <license>[B]This is free software[/B]</license>
+        <news>July 4 2022 - English added by G-Man[CR]Jan 23 2022 - Added external playlist playback option[CR]Jan 23 2022 - Minor fixes
+        </news>
+    </extension>
+</addon>
+    
+<addon id="plugin.video.tvseriesvideo" name="[B][COLOR orange]TVSeries[/COLOR][COLOR snow].video[/COLOR][/B]" version="0.3.1" provider-name="mbebe">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">TV Shows and Movies from the source: www.tvseries.video</description>
+        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>    
+        <summary lang="en">TV Shows and Movies</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/mbebe/blomqvist</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+    
+<addon id="plugin.video.fmoviesto" name="fmovies.to" version="1.20.1" provider-name="mbebe">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description>fmovies.to</description>
+        <disclaimer>https://github.com/mbebe/blomqvist</disclaimer>
+        <summary>fmovies.to</summary>
+        <language>pl</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/mbebe/blomqvist</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.bnwmovie19" name="Black and White Movies" version="1.0" provider-name="Anonymous">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.unidecode" />
+    <import addon="script.module.inputstreamhelper" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Black and White Movies</summary>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+    
+<addon id="plugin.video.crackle" name="Crackle" version="2022.10.19" provider-name="eracknaphobia">
+  <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.inputstreamhelper"/>
+      <import addon="script.module.kodi-six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
+    <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
+      <news>
+        - Update to f-strings
+      </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+    
+</addons>
