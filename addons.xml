@@ -289,33 +289,4 @@ v4.2.6
   </extension>
 </addon>
     
-<addon id="plugin.video.tvseriesvideo" name="[B][COLOR orange]TVSeries[/COLOR][COLOR snow].video[/COLOR][/B]" version="0.3.2" provider-name="mbebe">
-    <requires>
-        <import addon="script.module.requests" />
-        <import addon="script.module.resolveurl" version="5.0.00"/>
-        <import addon="script.module.six"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description lang="en">TV Shows and Movies from the source: www.tvseries.video</description>
-        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>    
-        <summary lang="en">TV Shows and Movies</summary>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://github.com/mbebe/blomqvist</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-        Version 0.3.2 - Updated and repaired Menu options
-        Version 0.3.1 - Tweaked the look of the menu
-        Version 0.3 - mbebe most recent version
-      </news>
-    </extension>
-</addon>
-    
 </addons>
