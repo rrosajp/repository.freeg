@@ -242,7 +242,6 @@ v4.2.6
     </extension>
 </addon>
 
-
 <addon id="plugin.video.bnwmovie19" name="Black and White Movies" version="1.0" provider-name="Anonymous">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -294,7 +293,7 @@ v4.2.6
   </extension>
 </addon>
     
-<addon id="plugin.video.tvseriesvideo" name="[B][COLOR orange]TVSeries[/COLOR][COLOR snow].video[/COLOR][/B]" version="0.3.4" provider-name="mbebe">
+<addon id="plugin.video.tvseriesvideo" name="[B][COLOR orange]TVSeries[/COLOR][COLOR snow].video[/COLOR][/B]" version="0.3.5" provider-name="mbebe">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -317,9 +316,32 @@ v4.2.6
             <fanart>fanart.jpg</fanart>
         </assets>
         <news>
-        Version 0.3.4 - A modifed Menu and new icons
         Version 0.3 - original version by mbebe
         </news>
+    </extension>
+</addon>
+    
+<addon id="plugin.video.goojara" name="goojara.to" version="0.4.1" provider-name="mbebe">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.six"/>
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">goojara.to</description>
+        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>	
+        <summary lang="en">Watch movies</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>https://github.com/mbebe/blomqvist</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
     
