@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.freeg" name="[COLOR gold]Free-G Repository[/COLOR]" version="1.0.0" provider-name="G-Man">
+<addon id="repository.freeg" name="[COLOR gold]Free-G Repository[/COLOR]" version="1.1.0" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="Free-G Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
@@ -27,7 +27,8 @@
 <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary>All FREE, No Premium Service Required</summary>
-    <description>A collection of Add-ons which uses free sources for those who can't afford or just refuse to use a premium service with Kodi. This is as good as it gets.</description>
+    <description>A collection of Add-ons which uses free sources. No Debrid required.[CR]
+    Works with Kodi Matrix and Nexus</description>
     <assets>
         <icon>icon.png</icon>
     </assets>
@@ -233,7 +234,7 @@ v4.2.6
     </extension>
 </addon>
 
-<addon id="plugin.video.bnwmovie19" name="Black and White Movies" version="1.0" provider-name="Anonymous">
+<addon id="plugin.video.bnwmovie19" name="Black and White Movies" version="420.1.0" provider-name="Anonymous">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -253,6 +254,30 @@ v4.2.6
 		<fanart>fanart.jpg</fanart>
   </assets>
   </extension>
+</addon>
+    
+<addon id="plugin.video.gratis" name="Gratis" version="0.1.8" provider-name="Jon Bovi">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.resolveurl"/>
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Come here for the latest.</summary>
+		<description lang="en_GB">Merriam-Webster definition of GRATIS: without charge or recompense : FREE!!!</description>
+		<platform>all</platform>
+		<license>GPL-3.0-or-later</license>
+		<website></website>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
 </addon>
     
 <addon id="plugin.video.crackle" name="Crackle" version="2022.10.19" provider-name="eracknaphobia">
