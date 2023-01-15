@@ -361,4 +361,30 @@ v4.2.6
     </extension>
 </addon>
     
+<addon id="plugin.video.wedotv" name="WeDoTV" version="0.1.1" provider-name="azzy9">
+	<requires>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.six"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">WeDoTV</summary>
+		<description lang="en_GB">This addon allows you watch Movies and TV Series from WeDoTV</description>
+		<language>uk</language>
+		<platform>all</platform>
+		<license>GPL-3.0-only</license>
+		<news>v0.1.1 (2022-12-22)
+Add Search
+
+v0.1.0 (2022-12-20)
+Change to use API</news>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+    
 </addons>
