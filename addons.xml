@@ -84,7 +84,7 @@
     </extension>
 </addon>
     
-<addon id="plugin.video.internetarchive" name="Internet Archive [Video]" version="4.2.6" provider-name="MetalChris,gujal">
+<addon id="plugin.video.internetarchive" name="Internet Archive [Video]" version="4.2.7" provider-name="MetalChris,gujal">
   <requires>
     <!-- <import addon="xbmc.python" version="2.1.0"/> -->
     <import addon="script.module.requests" />
@@ -102,11 +102,11 @@
     <language></language>
     <platform>all</platform>
     <news>
-v4.2.6
-- Fixes for search pagination and quality selection.
+v4.2.7
+- Use new search mechanism.
     </news>
     <assets>
-        <icon>icon.png</icon>
+        <icon>resources/media/icon.png</icon>
         <fanart>resources/media/fanart.jpg</fanart>
     </assets>
     <license></license>
