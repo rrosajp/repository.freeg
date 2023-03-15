@@ -106,7 +106,7 @@ v4.2.7
 - Use new search mechanism.
     </news>
     <assets>
-        <icon>resources/media/icon.png</icon>
+        <icon>icon.png</icon>
         <fanart>resources/media/fanart.jpg</fanart>
     </assets>
     <license></license>
