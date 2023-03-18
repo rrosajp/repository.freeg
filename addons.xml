@@ -391,4 +391,58 @@ Change to use API</news>
 	</extension>
 </addon>
     
+<addon id="plugin.video.tubitv" name="TubiTV" version="5.0.3" provider-name="Lunatixz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.t1mlib" version="4.0.8"/>
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="inputstream.adaptive" version="2.6.0"/>
+    <import addon="script.module.kodi-six" version="0.1.3.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="pseudotv_recommended.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=</forum>
+    <website>http://www.tubitv.com/</website>
+    <news>v.5.0.1[CR]PseudoTV Live support</news>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="en_GB">tubitv</summary>
+    <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
+    <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.8">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" version="2.22.0"/>
+    <import addon="inputstream.adaptive" version="2.6.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+        <description lang="en_GB">t1m Library Routines</description>
+        <summary lang="en_GB">t1m Library Routines</summary>
+        <disclaimer lang="en_GB">Feel free to use this script.</disclaimer>
+        <license>GPL-2.0-or-later</license>
+        <platform>all</platform>
+        <forum>https://forum.kodi.tv/showthread.php?tid=247163</forum>
+        <source>https://github.com/learningit/repo-scripts></source>
+        <language>en</language>
+        <news>
+            v4.0.8 - made compatible to Kodi 20 Nexus
+            v4.0.7 - fix tv listings for live stream addons</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+   </extension>
+</addon>
+    
 </addons>
