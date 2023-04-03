@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.freeg" name="[COLOR gold]Free-G Repository[/COLOR]" version="1.2.0" provider-name="G-Man">
+<addon id="repository.freeg" name="[COLOR gold]Free-G Repository[/COLOR]" version="1.3.0" provider-name="G-Man">
 <extension point="xbmc.addon.repository" name="Free-G Repository">
     <dir>
         <info compressed="false">https://github.com/mrgsi/repository.freeg/raw/master/addons.xml</info>
@@ -179,38 +179,6 @@ v4.2.7
     </extension>
 </addon>
     
-<addon id="plugin.video.duffyou" name="Duff You" version="0.2.2" provider-name="La Taberna">
-    <requires>
-        <import addon="script.module.six" version="1.11.0" />
-        <import addon="script.module.simplecache" />
-        <import addon="script.module.inputstreamhelper" version="0.5.0" />
-    </requires>
-    
-    <extension point="xbmc.python.pluginsource" library="libs/plugin.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.python.module" library="libs" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">A YouTube Alternative</summary>
-        <summary lang="es">Una alternativa de YouTube</summary>
-        <description lang="en">You are tired of Youtube apikeys? And watching the videos on the platform as maximum quality only up to 720p? [CR] Well, it's over! From our bar we present a new YouTube addon, where no APIKEY is needed, nor is there any kind of restriction to watch the videos at the highest quality offered, 720p, 1080p, 2K and 4K![CR]All this and much more plus...</description>
-        <description lang="es">Hasta las narices de las apikeys de YouTube? Y de ver como calidad máxima los videos de la plataforma solo hasta 720p?[CR]Pues se acabó! Desde nuestra taberna os presentamos un nuevo addon de YouTube, donde no hace falta APIKEY alguna, ni tampoco hay ningún tipo de restricción para ver los videos a la máxima calidad ofrecida, 720p, 1080p, 2K y 4K![CR]Todo esto y mucho mas...</description>
-        <disclaimer lang="en">This is free [COLOR red][B]software[/B][/COLOR][CR][COLOR red][B]But it is not allowed[/B][/COLOR] to be distributed pre-installed on any type of device nor its total or partial inclusion in any software and/or hardware package for which the end user must [COLOR red][B]pay or make a donation[/B][/COLOR], for its acquisition, for its use or for receiving assistance.[CR]If you believe that any of these rules is not being followed, please contact us.</disclaimer>
-        <disclaimer lang="es">Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.jpg</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <license lang="es">[B]Este es un software gratuito[/B]</license>
-        <license lang="en">[B]This is freeware[/B]</license>
-        <news lang="es">- Añadida opción de reproducción externa de playlists[CR]- Correcciones menores
-        </news>
-        <news lang="en">- Added option to play external playlists[CR]- Minor fixes
-        </news>
-    </extension>
-</addon>
-    
 <addon id="plugin.video.fmoviesto" name="fmovies.to" version="1.20.2" provider-name="mbebe">
     <requires>
         <import addon="script.module.requests" />
@@ -365,61 +333,6 @@ v4.2.7
     </extension>
 </addon>
     
-<addon id="plugin.video.wedotv" name="WeDoTV" version="0.1.1" provider-name="azzy9">
-	<requires>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.six"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">WeDoTV</summary>
-		<description lang="en_GB">This addon allows you watch Movies and TV Series from WeDoTV</description>
-		<language>uk</language>
-		<platform>all</platform>
-		<license>GPL-3.0-only</license>
-		<news>v0.1.1 (2022-12-22)
-Add Search
-
-v0.1.0 (2022-12-20)
-Change to use API</news>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
-</addon>
-    
-<addon id="plugin.video.tubitv" name="TubiTV" version="5.0.3" provider-name="Lunatixz">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-    <import addon="script.module.t1mlib" version="4.0.8"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="inputstream.adaptive" version="2.6.0"/>
-    <import addon="script.module.kodi-six" version="0.1.3.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="pseudotv_recommended.py"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language>en</language>
-    <license>GPL-2.0-or-later</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=</forum>
-    <website>http://www.tubitv.com/</website>
-    <news>v.5.0.1[CR]PseudoTV Live support</news>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary lang="en_GB">tubitv</summary>
-    <description lang="en_GB">Tubi TV has the largest library of FREE videos of hit and cult TV shows and films</description>
-    <disclaimer lang="en_GB">Feel free to use this script. For information visit the wiki.</disclaimer>
-  </extension>
-</addon>
-
 <addon id="script.module.t1mlib" name="t1m Library Routines" provider-name="t1m" version="4.0.8">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
