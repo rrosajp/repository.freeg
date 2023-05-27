@@ -179,34 +179,6 @@ v4.2.7
     </extension>
 </addon>
     
-<addon id="plugin.video.fmoviesto" name="fmovies.to" version="1.20.3" provider-name="mbebe">
-    <requires>
-        <import addon="script.module.requests" />
-        <import addon="script.module.resolveurl"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <description>International Movies and TV shows from the source: fmovies.to</description>
-        <disclaimer>https://github.com/mbebe/blomqvist</disclaimer>
-        <summary>International Movies and TV shows</summary>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://github.com/mbebe/blomqvist</website>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <news>
-        Version 1.20.3 - Added 2023 to lists and updated Countries    
-        Version 1.20.2 - A modifed Menu and new icons
-        Version 1.20 - original version by mbebe
-        </news>
-    </extension>
-</addon>
-
 <addon id="plugin.video.bnwmovie19" name="Black and White Movies" version="420.1.0" provider-name="Anonymous">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -312,7 +284,7 @@ v4.2.7
     </extension>
 </addon>
     
-<addon id="plugin.video.goojara" name="goojara.to" version="0.4.1" provider-name="mbebe">
+<addon id="plugin.video.goojara" name="goojara.to" version="0.4.2" provider-name="mbebe">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.six"/>
@@ -324,7 +296,7 @@ v4.2.7
     <extension point="xbmc.addon.metadata">
         <description lang="en">goojara.to</description>
         <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>	
-        <summary lang="en">Watch movies</summary>
+        <summary lang="en">Movies and TV Shows</summary>
         <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -333,6 +305,10 @@ v4.2.7
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
+        <news>
+        Version 0.4.2 - Added 2023 to Years    
+        Version 0.4 - original version by mbebe
+        </news>
     </extension>
 </addon>
     
