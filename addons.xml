@@ -213,7 +213,7 @@
   </extension>
 </addon>
     
-<addon id="plugin.video.goojara" name="goojara.to" version="0.4.2" provider-name="mbebe">
+<addon id="plugin.video.goojarato" name="Goojara" version="1.5" provider-name="G-Man">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.six"/>
@@ -223,21 +223,17 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <description lang="en">goojara.to</description>
-        <disclaimer lang="en">https://github.com/mbebe/blomqvist</disclaimer>	
-        <summary lang="en">Movies and TV Shows</summary>
+        <description lang="en">Movies and TV Shows found on https://goojara.to for free viewing.[CR]Forum discussions for Googara found at https://supernova.to[CR]Original coding by mbebe. This is a simple fork of the original add-on.</description>
+        <disclaimer lang="en">https://www.goojara.to</disclaimer>	
+        <summary lang="en">Free Movies and Shows</summary>
         <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <website>https://github.com/mbebe/blomqvist</website>
+        <website></website>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-        <news>
-        Version 0.4.2 - Added 2023 to Years    
-        Version 0.4 - original version by mbebe
-        </news>
     </extension>
 </addon>
     
