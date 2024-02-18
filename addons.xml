@@ -262,7 +262,7 @@
 	</extension>
 </addon>
     
-<addon id="plugin.video.fmoviez" name="FMOVIEZ" version="1.0.4" provider-name="Old Salt">
+<addon id="plugin.video.fmoviez" name="FMOVIEZ" version="1.0.5" provider-name="Old Salt">
     <requires>
         <import addon="script.module.requests" />
         <import addon="script.module.resolveurl"/>
