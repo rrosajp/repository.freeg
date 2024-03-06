@@ -285,6 +285,33 @@
     </extension>
 </addon>
     
+<addon id="plugin.video.tvseries" name="[B][COLOR skyblue]TVSeries[/COLOR][COLOR grey].video[/COLOR][/B]" version="1.0.4" provider-name="Old Salt">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.resolveurl" version="5.0.00"/>
+        <import addon="script.module.six"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <description lang="en">Movies and TV shows without the need for a premium (debrid) service[CR]Original coding by mbebe forked with minor adjustments, updates and new graphics.
+        </description>
+        <disclaimer lang="en">This add-on connects to the tvseries.video website</disclaimer>    
+        <summary lang="en">TV Shows and Movies</summary>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website></website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news></news>
+    </extension>
+</addon>
+
+    
 <addon id="plugin.video.gratis" name="Gratis" version="1.4.4" provider-name="X">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
